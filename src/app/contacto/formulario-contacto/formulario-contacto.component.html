@@ -1,0 +1,77 @@
+<div class="fondo-contenedor">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contenido">
+                    <h2>Crear un nuevo artículo</h2>
+                    <p>Cantidad de articulos creados por visitantes: {{contador}}</p>
+                </div>
+            </div>
+            <div>
+                <div class="fondo-formulario">
+                    <div>
+                        <h3>Complete la información</h3>
+                    </div>
+
+                    <form class="formulario" (ngSubmit)="crearArticulo(formularioArticulo)" #formularioArticulo="ngForm"
+                        novalidate="">
+
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input #nombre="ngModel" [(ngModel)]="articuloCreado.nombre" required id="nombre"
+                                name="nombre">
+                            <div [hidden]="nombre.valid || nombre.pristine">
+                                <p>El nombre es un dato requerido</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="correo">Correo electrónico</label>
+                            <input #correo="ngModel" [(ngModel)]="articuloCreado.correo" required id="correo"
+                                name="correo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+
+                            <div [hidden]="correo.valid || correo.pristine">
+                                <p>El correo está incorrecto</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="tituloArticulo">Título del artículo</label>
+                            <input #tituloArticulo="ngModel" [(ngModel)]="articuloCreado.tituloArticulo" required
+                                id="tituloArticulo" name="tituloArticulo">
+                            <div [hidden]="tituloArticulo.valid || tituloArticulo.pristine">
+                                <p>El título del artículo es un dato requerido</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="tipoArticulo">Tipo de artículo</label>
+                            <select [(ngModel)]="articuloCreado.tipoArticulo" id="tipoArticulo" name="tipoArticulo"
+                                #tipoArticulo="ngModel">
+
+                                <option *ngFor="let opcion of opcionesArticulos" [ngValue]="opcion">
+                                    {{opcion.tipo}}
+                                </option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="descripcionTitulo">Descripción del artículo</label>
+                            <textarea #descripcionTitulo="ngModel" [(ngModel)]="articuloCreado.descripcionArticulo"
+                                id="descripcionTitulo" name="descripcionTitulo" required></textarea>
+                            <div [hidden]="descripcionTitulo.valid || descripcionTitulo.pristine">
+                                <p>La descripción es requerida</p>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="submit" [disabled]="!formularioArticulo.valid">
+                                Crear artículo
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

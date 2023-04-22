@@ -1,0 +1,50 @@
+<div class="fondo-destacados">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contenido-destacado">
+                    <h2>Noticias destacadas</h2>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4" *ngFor="let noticia of noticiasServicio.noticiasPrincipales">
+                <div class="contenido-noticia-principal">
+                    <div>
+                        <img class="imagen-destacada img-fluid py-3" [src]="noticia.imagen" alt="imagen-noticia">
+                    </div>
+                    <div>
+                        <h3>{{noticia.categoria}}</h3>
+                    </div>
+                    <div>
+                        <a href="">{{noticia.titulo}}</a>
+                    </div>
+                    <div>
+                        <fa-icon class="icono" [icon]="iconoTiempo"></fa-icon>
+                        <h4>{{noticia.fecha}}</h4>
+                        <p>{{noticia.autor}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-xl-12" *ngFor="let noticia of noticiasServicio.noticiasDestacadas">
+                <div class="contenido-noticias">
+                    <div>
+                        <div>
+                            <h3>{{noticia.categoria}}</h3>
+                            <a href="">{{noticia.titulo}}</a>
+                            <p [hidden]="activarDescripcion">{{noticia.descripcion}}</p>
+                            <button (click)="mostrarDescripcion()">{{textoBoton}}</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-noticia">
+                            <img class="img-fluid" [src]="noticia.imagen" alt="imagen-noticia">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

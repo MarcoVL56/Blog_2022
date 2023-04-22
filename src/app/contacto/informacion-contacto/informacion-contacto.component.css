@@ -1,0 +1,65 @@
+.fondo{
+    background-color: rgb(230, 213, 184);
+    min-height: 400px;
+    padding: 40px;
+}
+
+.contenido h1{
+    font-size: 50px;
+    color: #191919;
+    padding: 20px 0;
+}
+
+.contenido h2{
+    font-size: 35px;
+    color: #191919;
+}
+
+.contenido p{
+    font-size: 25px;
+    color: #191919;
+}
+
+
+@media(max-width: 1200px) {
+
+    .contenido h1{
+        font-size: 48px;
+    }
+    
+    .contenido h2{
+        font-size: 32px;
+    }
+    
+    .contenido p{
+        font-size: 23px;
+    }
+}
+
+@media(max-width: 850px){
+    .contenido h1{
+        font-size: 45px;
+    }
+    
+    .contenido h2{
+        font-size: 30px;
+    }
+    
+    .contenido p{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 750px){
+    .contenido h1{
+        font-size: 40px;
+    }
+    
+    .contenido h2{
+        font-size: 28px;
+    }
+    
+    .contenido p{
+        font-size: 18px;
+    }
+}

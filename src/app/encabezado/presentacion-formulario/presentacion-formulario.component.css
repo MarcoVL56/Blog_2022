@@ -1,0 +1,39 @@
+.fondo-formulario{
+    background-color: #191919;
+    min-height: 800px;
+}
+
+.contenedor-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenido h1{
+    font-size: 70px;
+    color: rgb(211, 222, 220);
+    text-align: center;
+}
+
+
+@media(max-width: 1200px) {
+    .contenido h1{
+        font-size: 60px;
+
+    }
+}
+
+@media(max-width: 850px){
+    .contenido h1{
+        font-size: 50px;
+
+    }
+}
+
+
+@media(max-width:730px){
+    .contenido h1{
+        font-size: 45px;
+    }
+}

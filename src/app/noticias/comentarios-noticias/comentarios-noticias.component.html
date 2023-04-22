@@ -1,0 +1,47 @@
+<div class="fondo-comentarios">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contenido-comentarios">
+                    <h2>
+                        Comentarios de las noticias destacadas
+                    </h2>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <form #formularioComentarios="ngForm" novalidate="" class=" formulario"
+                    (ngSubmit)="agregarComentario(inputAutor,areaComentario)">
+                    <div>
+                        <h2>Autor del comentario: {{autor}}</h2>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" [(ngModel)]="autor" name="input-autor" #inputAutor="ngModel" required>
+
+                        <div class="contenido-alerta" [hidden]="inputAutor.valid || inputAutor.pristine">
+                            <p>El nombre es un dato requerido</p>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="comentario">Comentario</label>
+                        <textarea placeholder="Escriba su comentario" #areaComentario></textarea>
+                    </div>
+                    <div>
+                        <button [disabled]="!formularioComentarios.valid" class="btn btn-primary" type="submit">Enviar
+                            comentario</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12" *ngFor="let comentarista of comentaristas">
+                <div class="contenido-comentario">
+                    <div>
+                        <h2>Comentario: {{comentarista.autor}}</h2>
+                    </div>
+                    <div>
+                        <p>{{comentarista.comentario}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="fondo contenedor-flex">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contenido">
+                    <h1>Listado de Noticias</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="fondo-noticias">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contenido-noticias">
+                    <h2>Noticias</h2>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-6" *ngFor="let noticia of noticiasServicio.noticias">
+                <div class="fondo-noticia">
+                    <div class="contenido-noticia">
+                        <div>
+                            <h3>{{noticia.categoria}}</h3>
+                            <h2>{{noticia.titulo}}</h2>
+                            <h4>{{noticia.autor}} | Publicada {{noticia.fecha}}</h4>
+                        </div>
+                        <div>
+                            <img class="fondo-img img-fluid" [src]="noticia.imagen" alt="">
+                        </div>
+                        <div>
+                            <p>{{noticia.descripcion}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-informacion-contacto></app-informacion-contacto>

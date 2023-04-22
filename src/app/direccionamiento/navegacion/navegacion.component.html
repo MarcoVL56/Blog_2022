@@ -1,0 +1,29 @@
+<div class="fondo-navegacion fixed-top">
+    <div class="container-fluid">
+        <nav class="row justify-content-around align-items-center">
+            <div class="col-7 col-lg-6">
+                <a routerLink="/">
+                    <img class="img-logo" src="../../../assets/img/Logo.png">
+                </a>
+            </div>
+            <div class="col-5 col-lg-6 d-flex justify-content-end p-0">
+                <ul class="lista" [ngClass]="{'mostrar': mostrarOpcion}">
+                    <li class="lista-contenida">
+                        <a routerLink="/" class="link">Inicio</a>
+                    </li>
+                    <li class="lista-contenida">
+                        <a routerLink="/Artículos" class="link">Artículos</a>
+                    </li>
+                    <li class="lista-contenida">
+                        <a routerLink="/Noticias" class="link">Noticias</a>
+                    </li>
+                </ul>
+                <span class="boton-menu" (click)="seleccionar()">
+                    <img src="../../../assets/img/iconos/Opciones.png">
+                </span>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

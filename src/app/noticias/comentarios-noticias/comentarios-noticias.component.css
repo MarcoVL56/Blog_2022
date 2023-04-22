@@ -1,0 +1,204 @@
+.fondo-comentarios{
+    min-height: 800px;
+    background-color: rgb(20, 30, 39);
+}
+
+.contenido-comentarios h2{
+    padding: 50px 0 20px;
+    color: rgb(211, 222, 220);
+    text-align: center;
+}
+
+.formulario{
+    min-height: 400px;
+    background-color: rgb(230, 213, 184);
+    border-radius: 5px;
+    margin: 10px 200px;
+    padding: 0 35px;
+}
+
+.formulario h2{
+    text-align: center;
+    padding: 20px 5px 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.formulario label{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.formulario input{
+    width: 50%;
+    border: 2px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(222, 160, 87);
+}
+
+.formulario textarea{
+    min-height: 180px;
+    width: 100%;
+    border: 2px solid rgb(222, 160, 87);
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.formulario button{
+    font-size: 20px;
+    background-color: #203239;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: 2px solid #203239;
+}
+
+.formulario button:hover{
+    background-color: rgb(223, 223, 222);
+    color: #203239;
+}
+
+.contenido-comentario{
+    margin: 10px 200px 10px 250px;
+    min-height: 100px;
+    background-color: rgb(230, 213, 184);
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.contenido-comentario h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.contenido-comentario p{
+    font-size: 20px;
+    padding: 0 50px ;
+}
+
+.contenido-alerta p{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 20px;
+    background-color: #E25174;
+    border-radius: 5px;
+    color: #191919;
+    margin: 5px;
+}
+
+@media(max-width: 1200px) {
+
+    .formulario{
+        margin: 10px 130px;
+        padding: 0 35px;
+    }
+    
+    .formulario h2{
+        font-size: 23px;
+    }
+    
+    .formulario label{
+        font-size: 18px;
+    }
+    
+    .formulario input{
+        font-size: 18px;
+    }
+    
+    .formulario textarea{
+        min-height: 150px;
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .formulario button{
+        font-size: 18px;
+        padding: 4px 8px;
+        margin:8px 0;
+    }
+
+
+    .contenido-comentario{
+        margin: 10px 130px 10px 150px;
+    }
+    
+    .contenido-comentario h2{
+        font-size: 23px;
+        font-weight: 600;
+    }
+    
+    .contenido-comentario p{
+        font-size: 18px;
+        padding: 0 30px ;
+    }
+
+
+}
+
+@media(max-width: 1000px){
+
+    .formulario{
+        margin: 10px 80px;
+        padding: 0 35px;
+    }
+
+    .contenido-comentario{
+        margin: 10px 80px 10px 110px;
+    }
+
+}
+@media(max-width: 850px){
+
+    .formulario{
+        margin: 10px 0px;
+        padding: 0 35px;
+        min-height: 350px;
+    }
+    
+    .formulario h2{
+        font-size: 20px;
+    }
+    
+    .formulario label{
+        font-size: 15px;
+    }
+    
+    .formulario input{
+        font-size: 15px;
+    }
+    
+    .formulario textarea{
+        min-height: 100px;
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    .formulario button{
+        font-size: 15px;
+        padding: 4px 8px;
+        margin:8px 0;
+    }
+
+    .contenido-comentario{
+        margin: 10px 0px 10px 30px;
+    }
+    
+    .contenido-comentario h2{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .contenido-comentario p{
+        font-size: 15px;
+        padding: 0 30px ;
+    }
+
+    .contenido-alerta p{
+        font-size: 15px;
+    }
+}

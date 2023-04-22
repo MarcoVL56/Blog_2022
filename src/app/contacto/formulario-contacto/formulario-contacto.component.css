@@ -1,0 +1,180 @@
+.fondo-contenedor{
+    background-color: rgb(20, 30, 39);
+    min-height: 1000px;
+}
+
+.contenido h2{
+    font-size: 40px;
+    color: rgb(211, 222, 220);
+    padding: 40px 0 0 0;
+}
+
+.contenido p{
+    font-size: 20px;
+    color: rgb(211, 222, 220);
+}
+
+.fondo-formulario{
+    background-color: rgb(230, 213, 184);
+    min-height: 400px;
+    border-radius: 5px;
+    margin: 10px 200px;
+    padding: 10px 35px;
+    background-color: rgb(230, 213, 184);
+}
+
+.fondo-formulario h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin: 10px;
+    padding: 10px;
+}
+
+.formulario label{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 0;
+ 
+}
+
+.formulario p {
+    font-size: 20px;
+    margin: 5px 0;
+    text-align: center;
+    background-color: #E25174;
+    border-radius: 5px;
+    color: #191919;
+    font-weight: 400;
+}
+
+.formulario input{
+    width: 100%;
+    border: 2px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(222, 160, 87);
+}
+
+.formulario textarea{
+    min-height: 180px;
+    width: 100%;
+    border: 2px solid rgb(222, 160, 87);
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.formulario button{
+    display: inline-block;
+    font-size: 20px;
+    background-color: #203239;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px;
+    border: 2px solid #203239;
+}
+
+.formulario button:hover{
+    background-color: rgb(223, 223, 222);
+    color: #203239;
+}
+
+.formulario select{
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid rgb(222, 160, 87);
+    width: 100%;
+}
+
+.formulario-enviado{
+    display: inline-block;
+    padding:  0 25px;
+    background-color: rgb(0, 200, 151);
+    border-radius: 10px;
+   
+}
+
+@media(max-width: 1200px) {
+
+    .fondo-formulario{
+        margin: 10px 130px;
+        padding: 0 35px;
+    }
+
+    .fondo-formulario h3{
+        font-size: 25px;
+    }
+    
+    .formulario h2{
+        font-size: 30px;
+    }
+    
+    .formulario label{
+        font-size: 18px;
+    }
+    
+    .formulario input{
+        font-size: 18px;
+    }
+    
+    .formulario textarea{
+        min-height: 150px;
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .formulario button{
+        font-size: 18px;
+        padding: 4px 8px;
+    }
+
+}
+
+@media(max-width: 1000px){
+
+    .fondo-formulario{
+        margin: 10px 80px;
+        padding: 0 35px;
+    }
+
+}
+@media(max-width: 850px){
+
+    .fondo-formulario{
+        margin: 10px 0px;
+        padding: 0 35px;
+        min-height: 350px;
+    }
+    
+    .fondo-formulario h3{
+        font-size: 25px;
+    }
+
+    .formulario h2{
+        font-size: 28px;
+    }
+    
+    .formulario label{
+        font-size: 15px;
+    }
+    
+    .formulario input{
+        font-size: 15px;
+    }
+    
+    .formulario textarea{
+        min-height: 100px;
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    .formulario button{
+        font-size: 15px;
+        padding: 4px 8px;
+    }
+
+
+}

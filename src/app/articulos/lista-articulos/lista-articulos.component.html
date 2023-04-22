@@ -1,0 +1,70 @@
+<div class="fondo contenedor-flex">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contenido">
+                    <h1>Conjunto de Artículos</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fondo-articulos">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contenido-articulos">
+                    <h2>Artículos creados</h2>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="fondo-articulo d-flex" *ngFor="let articulo of articulosServicio.articulosPersonales">
+                    <div class="contenedor-articulo">
+                        <div class="contenido-articulo">
+                            <h3>{{articulo.tipo}}</h3>
+                            <h2>{{articulo.titulo}}</h2>
+                            <p>{{articulo.descripcion}}</p>
+                            <h4>Artículo realizado por: <b>{{articulo.nombre}}</b></h4>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-articulos">
+                        <div>
+                            <img class="img-articulo img-fluid" [src]="articulo.imagen" alt="img-articulos">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12" *ngFor="let articulo of articulos; let i = index">
+
+                <div class="fondo-articulo d-flex">
+                    <div class="contenedor-articulo">
+                        <div class="contenido-articulo">
+                            <h3>{{articulo.tipo}}</h3>
+                            <h2>{{articulo.titulo}}</h2>
+                            <p>{{articulo.descripcion}}</p>
+                            <h4>Articulo realizado por: <b>{{articulo.nombre}}</b></h4>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-img-articulos">
+                        <div>
+                            <img class="img-articulo img-fluid" src="../../../assets/img/articulo-basico.jpg"
+                                alt="img-articulos">
+                        </div>
+
+                        <div class="text-center my-2">
+                            <button class="btn btn-danger" (click)="eliminarArticulo(i)">Eliminar Articulo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-formulario-contacto></app-formulario-contacto>
+
+<app-informacion-contacto></app-informacion-contacto>

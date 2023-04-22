@@ -1,0 +1,240 @@
+.fondo-destacados{
+    min-height: 1500px;
+    background-color: #191919;
+}
+
+.contenido-destacado h2{
+    padding: 25px 0 5px 0;
+    font-size: 45px;
+    color: #fff;
+}
+
+
+.contenido-noticia-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(230, 213, 184);
+    min-height: 500px;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.contenido-noticia-principal h3{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(222, 160, 87);
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: 2px solid rgb(222, 160, 87)
+}
+
+.contenido-noticia-principal a{
+    color: #191919;
+    font-size: 23px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contenido-noticia-principal a:hover{
+    color: rgb(142, 50, 0);
+}
+
+.contenido-noticia-principal h4{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.contenido-noticia-principal p{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    font-weight:600;
+}
+
+.contenido-noticia-principal .icono{
+    font-size: 20px;
+}
+
+
+
+
+.contenido-noticias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 5px;
+    padding: 50px;
+    background-color: rgb(217, 202, 179);
+    border-radius: 5px;
+}
+
+.contenido-noticias a{
+    cursor: pointer;
+    font-size: 35px;
+    text-decoration: none;
+    color: #191919;
+}
+
+.contenido-noticias a:hover{
+    color: rgb(142, 50, 0);
+}
+
+.contenido-noticias h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.contenido-noticias p{
+    font-size: 25px;
+}
+
+.contenido-noticias button{
+    display: block;
+    font-size: 20px;
+    background-color: #203239;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 2px solid #203239;
+}
+
+.contenido-noticias button:hover{
+    background-color: rgb(223, 223, 222);
+    color: #203239;
+}
+
+
+
+.img-noticia{
+    max-width: 450px;
+    margin: 20px;
+}
+
+
+@media(max-width: 1200px) {
+    .contenido-noticia-principal{
+        padding: 35px;
+        margin: 18px 0;
+    }
+
+
+    .contenido-noticia-principal h3{
+        font-size: 16px;
+        padding: 5px 18px;
+    }
+    .contenido-noticia-principal a{
+        font-size: 20px;
+    }
+    
+    .contenido-noticia-principal h4{
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+    .contenido-noticia-principal p{
+        padding: 8px;
+        font-size: 18px;
+        font-weight:600;
+    }
+    
+    .contenido-noticia-principal .icono{
+        font-size: 20px;
+    }
+
+
+
+    .contenido-noticias{
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    .contenido-noticias a{
+        cursor: pointer;
+        font-size: 30px;
+    }
+    
+    .contenido-noticias h3{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+    .contenido-noticias p{
+        font-size: 18px;
+    }
+    
+    .contenido-noticias button{
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    
+}
+
+@media(max-width: 900px){
+    .contenido-noticia-principal{
+        min-height: 400px;
+    }
+}
+
+@media(max-width: 850px){
+    .contenido-noticia-principal{
+        padding: 25px;
+        margin: 18px 0;
+    }
+
+    .contenido-noticia-principal h3{
+        font-size: 15px;
+        padding: 3px 16px;
+    }
+    .contenido-noticia-principal a{
+        font-size: 18px;
+    }
+    
+    .contenido-noticia-principal h4{
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .contenido-noticia-principal p{
+        padding: 8px;
+        font-size: 15px;
+        font-weight:600;
+    }
+    
+    .contenido-noticia-principal .icono{
+        font-size: 18px;
+    }
+
+    .contenido-noticias a{
+        cursor: pointer;
+        font-size: 28px;
+    }
+    
+    .contenido-noticias h3{
+        font-size: 23px;
+        font-weight: 500;
+    }
+    
+    .contenido-noticias p{
+        font-size: 15px;
+    }
+    
+    .contenido-noticias button{
+        font-size: 15px;
+    
+    }
+    
+    @media(max-width: 650px){
+        .contenido-noticia-principal{
+            padding: 15px;
+            margin: 10px 0;
+        }
+    }
+    
+}
+
